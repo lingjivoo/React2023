@@ -35,14 +35,15 @@ pip install -r requirements.txt
 
 ## 👨‍🏫 Get Started 
 
-<details><summary> Data</summary>
+<details><summary> Data </summary>
 <p>
  
-Challenge Data Description:
-The REACT 2023 Multimodal Challenge Dataset is a compilation of recordings from the following three publicly available datasets for studying dyadic interactions: [NOXI](https://dl.acm.org/doi/10.1145/3136755.3136780), [RECOLA](https://ieeexplore.ieee.org/document/6553805) and [UDIVA](https://www.computer.org/csdl/proceedings-article/wacvw/2021/196700a001/1sZ3sn1GBxe). 
-Participants can apply for the data at our [Homepage](https://sites.google.com/cam.ac.uk/react2023/home)
+**Challenge Data Description:
+- The REACT 2023 Multimodal Challenge Dataset is a compilation of recordings from the following three publicly available datasets for studying dyadic interactions: [NOXI](https://dl.acm.org/doi/10.1145/3136755.3136780), [RECOLA](https://ieeexplore.ieee.org/document/6553805) and [UDIVA](https://www.computer.org/csdl/proceedings-article/wacvw/2021/196700a001/1sZ3sn1GBxe). 
+
+- Participants can apply for the data at our [Homepage](https://sites.google.com/cam.ac.uk/react2023/home).
    
-Data organization (`data/`) is listed below:
+**Data organization (`data/`) is listed below:
 ```
 data
 ├── test
@@ -100,32 +101,31 @@ data
 </details>
 
 
-<details><summary> External Tool Preparation</summary>
+<details><summary> External Tool Preparation </summary>
 <p>
 
-In this baseline, we leverage [3DMM model](https://github.com/LizhenWangT/FaceVerse) to extract 3DMM coefficients and render the 3D listener and then we use a 3D-to-2D [PIRender](https://github.com/RenYurui/PIRender) to render final 2D frames of listener.
+In this baseline, we leverage [3DMM model](https://github.com/LizhenWangT/FaceVerse) to extract 3DMM coefficients and render the 3D listener and 
+then we use a 3D-to-2D [PIRender](https://github.com/RenYurui/PIRender) to render final 2D frames of listener.
    
-If you use our prepared 3DMM coefficients, you need to download the FaceVerse version 2 model at this [page](https://github.com/LizhenWangT/FaceVerse) and put in the folder (`external/FaceVerse/data/`).
-We provide extracted 3DMM coefficients for downloading at [Google Drive]. 
-We also provide the mean_face and std_face of 3DMM coefficients at [Google Drive]. Please put them at the folder (`external/FaceVerse/`).
-We re-train the PIRender and provide the [checkpoint]. Please put it at the folder (`external/PIRender/`).
+- If you use our prepared 3DMM coefficients, you need to download the FaceVerse version 2 model at this [page](https://github.com/LizhenWangT/FaceVerse) and put in the folder (`external/FaceVerse/data/`).
+  We provide extracted 3DMM coefficients for downloading at [Google Drive]. 
+  We also provide the mean_face and std_face of 3DMM coefficients at [Google Drive]. Please put them at the folder (`external/FaceVerse/`).
+
+- We re-train the PIRender and provide the [checkpoint]. Please put it at the folder (`external/PIRender/`).
    
 </p>
 </details>
 
 
-
-Running the following shell can start training:
+<details><summary> Training </summary>
+<p>
+ 
+- Running the following shell can start training:
 ```shell
-python train.py \
---batch-size 8 \
---gpu_ids 0  \
--lr 0.00002 \
--e 50 \
--j 12 \
---outdir results/train
+python train.py --batch-size 8  --gpu_ids 0  -lr 0.00002  -e 50  -j 12  --outdir results/train
 ```
-
+</p>
+</details>
 
 
 
