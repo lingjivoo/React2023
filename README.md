@@ -38,7 +38,7 @@ pip install -r requirements.txt
 <details><summary> #### Data</summary>
 <p>
 Data organization (`data/`) is listed below:
-    *   ```text
+```
         data
         ├── test
         ├── val
@@ -90,7 +90,7 @@ Data organization (`data/`) is listed below:
                     ├── group-3
                 ├── UDIVA
             
-        ```
+```
 </p>
 </details>
 
