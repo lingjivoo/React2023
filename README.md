@@ -27,8 +27,8 @@ This task aims to develop a machine learning model that estimates each frame, ra
 ### Install Python dependencies
 
 ```shell
-conda create -n ichat python=3.8
-conda activate ichat
+conda create -n react python=3.8
+conda activate react
 pip install -r requirements.txt
 ```
 
