@@ -37,59 +37,59 @@ pip install -r requirements.txt
 
 
 Data organization (`data/`) is listed below:
-    *   ```text
-        data
-        ├── test
-        ├── val
-        ├── train
-            ├── Video_files
-                ├── NoXI
-                    ├── 010_2016-03-25_Paris
-                        ├── Expert_video
-                        ├── Novice_video
-                            ├── 1
-                                ├── 1.png
-                                ├── ....
-                                ├── 751.png
-                            ├── ....
-                    ├── ....
-                ├── RECOLA
-                ├── UDIVA
-            ├── Audio_files
-                ├── NoXI
-                ├── RECOLA
-                    ├── group-1
-                        ├── P25 
-                        ├── P26
-                            ├── 1.wav
-                            ├── ....
-                    ├── group-2
-                    ├── group-3
-                ├── UDIVA
-            ├── Emotion
-                ├── NoXI
-                ├── RECOLA
-                    ├── group-1
-                        ├── P25 
-                        ├── P26
-                            ├── 1.csv
-                            ├── ....
-                    ├── group-2
-                    ├── group-3
-                ├── UDIVA
-            ├── 3D_FV_files
-                ├── NoXI
-                ├── RECOLA
-                    ├── group-1
-                        ├── P25 
-                        ├── P26
-                            ├── 1.npy
-                            ├── ....
-                    ├── group-2
-                    ├── group-3
-                ├── UDIVA
+```
+data
+├── test
+├── val
+├── train
+   ├── Video_files
+       ├── NoXI
+           ├── 010_2016-03-25_Paris
+               ├── Expert_video
+               ├── Novice_video
+                   ├── 1
+                       ├── 1.png
+                       ├── ....
+                       ├── 751.png
+                   ├── ....
+           ├── ....
+       ├── RECOLA
+       ├── UDIVA
+   ├── Audio_files
+       ├── NoXI
+       ├── RECOLA
+           ├── group-1
+               ├── P25 
+               ├── P26
+                   ├── 1.wav
+                   ├── ....
+           ├── group-2
+           ├── group-3
+       ├── UDIVA
+   ├── Emotion
+       ├── NoXI
+       ├── RECOLA
+           ├── group-1
+               ├── P25 
+               ├── P26
+                   ├── 1.csv
+                   ├── ....
+           ├── group-2
+           ├── group-3
+       ├── UDIVA
+   ├── 3D_FV_files
+       ├── NoXI
+       ├── RECOLA
+           ├── group-1
+               ├── P25 
+               ├── P26
+                   ├── 1.npy
+                   ├── ....
+           ├── group-2
+           ├── group-3
+       ├── UDIVA
             
-        ```
+```
 
 
 
